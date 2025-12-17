@@ -1,0 +1,81 @@
+/* ## Colors
+
+- White: hsl(0, 0%, 100%)
+
+- Slate 300: hsl(212, 45%, 89%)
+- Slate 500: hsl(216, 15%, 48%)
+- Slate 900: hsl(218, 44%, 22%)
+ */
+
+/* - Font size (paragraph): 15px */
+
+/* - Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 400, 700 */
+
+:root {
+  --priamry: #d6e2f0;
+  --secondary: #68778d;
+  --tertiary: #1f3251;
+  --body-font-size: 15px;
+  --font-weight-light: 400;
+  --font-weight-heavy: 700;
+}
+
+.outfit-body-font {
+  font-family: 'Outfit', serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--priamry);
+  font-family: 'Outfit', serif;
+}
+
+.container {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.qr-container {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  max-width: 21rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 10px;
+}
+img {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  /* padding: 0 20px 0 20px; */
+}
+
+.text-container {
+  padding: 10px 40px 40px 40px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.header-text {
+  color: var(--tertiary);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.description-text {
+  color: var(--secondary);
+  font-weight: 400;
+}
